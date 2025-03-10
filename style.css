@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f5;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+body.fade-out {
+    opacity: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    color: #333;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #43a047;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero, .about, .contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1, .about h1, .contact h1 {
+    color: #43a047;
+}
+
+.hero-content p, .about p, .contact p {
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #43a047;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #43a047;
+    border-radius: 5px;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    width: 106%; /* Same width as the input fields */
+    height: 40px; /* Match the height of the input fields */
+    background-color: #4CAF50; /* Same green color */
+    color: #fff; /* Text color */
+    border: 2px solid #4CAF50; /* Same border style */
+    border-radius: 5px; /* Rounded corners like the inputs */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Clickable cursor */
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+.about {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Positioned lower for the animation effect */
+    animation: fadeInUp 1s ease forwards; /* Animation added */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional Styling for Better Design */
+.about h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.hero {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Positioned lower for the animation effect */
+    animation: fadeInUp 1.2s ease-out forwards; /* Smooth fade-in animation */
+    background-color: #fdf5e6; /* Light cream background for a warm touch */
+    border: 3px solid #43a047; /* Green border to highlight the section */
+    padding: 50px 40px; /* Spacious padding for better layout */
+}
+
+.hero h1 {
+    color: #43a047; /* Green theme for the heading */
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Starts lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Moves to original position */
+    }
+}
+.review{
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Positioned lower for the animation effect */
+    animation: fadeInUp 1.2s ease-out forwards; /* Smooth fade-in animation */
+    background-color: #fdf5e6; /* Light cream background for a warm touch */
+    border: 3px solid #43a047; /* Green border to highlight the section */
+    padding: 50px 40px; /* Spacious padding for better layout */
+}
+
+.review h1 {
+    color: #43a047; /* Green theme for the heading */
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.review p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Starts lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Moves to original position */
+    }
+}
+.about {
+    opacity: 0;  /* Initially hidden */
+    transform: translateY(30px); /* Slightly smaller size for zoom effect */
+    animation: fadeInUp 1.2s ease-out forwards; /* Smooth zoom and fade effect */
+    background-color: #fdf5e6; /* Soft green background for freshness */
+    border: 3px solid #43a047; /* Green border for a natural vibe */
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+.about h1 {
+    color: #43a047;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.9); /* Starts smaller */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Returns to normal size */
+    }
+}
+
+.about-us {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-left: 5px solid #43a047;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about-us h1, 
+.about-us h2 {
+    color: #43a047;
+    margin-top: 20px;
+}
+
+.about-us p {
+    margin-bottom: 15px;
+}
+#content {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    animation-delay: 0.2s; /* 0.2-second delay before animation starts */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Subtle upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}        
+
