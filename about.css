@@ -1,4 +1,4 @@
-body {
+8body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -31,7 +31,6 @@ nav {
 .logo span {
     color: #43a047;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -89,11 +88,18 @@ input, textarea {
     outline: none;
 }
 
+.qr-code {
+    width: 200px;
+    height: 200px;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
 }
+
 
 .social-icons {
     display: flex;
@@ -447,17 +453,6 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     line-height: 1.8;
-}
-
-.Qr img {
-  width: 200px;       
-  height: 200px;      
-  margin-top: 20px;   
-}
-
-.Qr {
-  text-align: center; 
-  padding: 10px 0;   
 }
 .about-us h1, 
 .about-us h2 {
