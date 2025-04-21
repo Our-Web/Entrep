@@ -88,16 +88,16 @@ input, textarea {
     outline: none;
 }
 
-.qr-code {
-    width: 200px;
-    height: 200px;
-}
-
 
 footer {
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
 }
 
 
