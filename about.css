@@ -449,6 +449,11 @@ button:hover {
     line-height: 1.8;
 }
 
+.Qr img {
+  width: 200px;       
+  height: 200px;      
+  margin-top: 20px;   
+}    
 .about-us h1, 
 .about-us h2 {
     color: #43a047;
