@@ -449,11 +449,16 @@ button:hover {
     line-height: 1.8;
 }
 
+.Qr img {
+  width: 200px;       /* You can adjust this */
+  height: 200px;      /* Keep it square */
+  margin-top: 20px;   /* Adds space above */
+}
+
 .Qr {
-  width: 100px;       
-  height: 100px;      
-  margin-top: 20px;   
-}    
+  text-align: center; /* Center it horizontally */
+  padding: 10px 0;    /* Optional: space around the QR */
+}
 .about-us h1, 
 .about-us h2 {
     color: #43a047;
