@@ -88,6 +88,38 @@ input, textarea {
     outline: none;
 }
 
+#whats-new {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.news-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.news-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+
 .image-grid {
   display: flex;
   flex-wrap: wrap;
