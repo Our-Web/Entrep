@@ -119,31 +119,6 @@ input, textarea {
   text-decoration: underline;
 }
 
-
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.image-grid a {
-  display: inline-block;
-}
-
-.image-grid img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.image-grid img:hover {
-  transform: scale(1.05);
-}
-
-
 footer {
     text-align: center;
     padding: 20px;
