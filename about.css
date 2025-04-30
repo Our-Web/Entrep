@@ -1,4 +1,4 @@
-8body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -86,6 +86,41 @@ input, textarea {
     border: 2px solid #43a047;
     border-radius: 5px;
     outline: none;
+}
+
+#whats-new {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#whats-new h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.news-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
 }
 
 
