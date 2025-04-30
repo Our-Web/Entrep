@@ -105,7 +105,7 @@ input, textarea {
 .news-item {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 20px;
 }
 
 .news-item img {
