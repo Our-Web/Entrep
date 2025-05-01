@@ -97,6 +97,34 @@ input, textarea {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+#whats-new h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Scroll for Image Container */
+.image-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 15px;
+  width: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  padding-bottom: 10px; /* Add some spacing to the bottom */
+}
+
+.image-item {
+  flex: 0 0 auto; /* Prevents images from shrinking */
+  width: 30%; /* Adjust to show how many images you want per row (3 images per row here) */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* News Item Layout */
 .news-item {
   display: flex;
   align-items: flex-start;
@@ -119,27 +147,7 @@ input, textarea {
   text-decoration: underline;
 }
 
-/* Horizontal Scroll for "What's New" Section */
-.image-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  width: 100%;
-  scroll-behavior: smooth;
-}
-
-.image-item {
-  flex: 0 0 auto;
-  width: 30%; /* Adjust based on how many images you want to show */
-}
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* See More Button */
+/* See More Button Styling */
 .see-more-btn {
   display: block;
   margin: 20px auto;
@@ -155,7 +163,6 @@ img {
 .see-more-btn:hover {
   background-color: #0056b3;
 }
-
 
 footer {
     text-align: center;
