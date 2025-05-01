@@ -119,6 +119,44 @@ input, textarea {
   text-decoration: underline;
 }
 
+/* Horizontal Scroll for "What's New" Section */
+.image-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.image-item {
+  flex: 0 0 auto;
+  width: 30%; /* Adjust based on how many images you want to show */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* See More Button */
+.see-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
