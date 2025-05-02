@@ -1,7 +1,13 @@
-<script>
-  document.getElementById("seeMoreBtn").addEventListener("click", function () {
-    const hiddenItems = document.querySelectorAll(".news-item.hidden");
-    hiddenItems.forEach(item => item.classList.remove("hidden"));
-    this.style.display = "none";
+const seeMoreBtn = document.getElementById('seeMoreBtn');
+const hiddenItems = document.querySelectorAll('.news-item.hidden');
+
+let isExpanded = false;
+
+seeMoreBtn.addEventListener('click', () => {
+  hiddenItems.forEach(item => {
+    item.classList.toggle('hidden');
   });
-</script>
+
+  isExpanded = !isExpanded;
+  seeMoreBtn.textContent = isExpanded ? 'See Less' : 'See More';
+});
