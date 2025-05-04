@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const targetPage = this.getAttribute("href");
 
-            document.body.classList.add("fade-out"); // Add fade-out effect
+            document.body.classList.add("fade-out");
 
             setTimeout(() => {
-                window.location.href = targetPage; // Navigate after delay
+                window.location.href = targetPage;
             }, 200); // 200ms delay
         });
     });
