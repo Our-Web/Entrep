@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0aac83, #43a047);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #43a047;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0cb122;
+  }
+  
+  .receipt {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #43a047;
+    background: #eef6ff;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .receipt .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #43a047;
+    background: #d0e7ff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #0aac83;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  
