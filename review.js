@@ -1,4 +1,4 @@
-// Wait for the DOM to fully load before running the script
+
 document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll(".star-rating span");
     const ratingInput = document.getElementById("rating");
@@ -7,13 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const anonymousToggle = document.getElementById("anonymous-toggle");
     const form = document.getElementById("review-form");
 
-    // Prevent errors if elements are missing
     if (!form || !reviewList || !ratingInput || !nameInput || !anonymousToggle) {
         console.error("One or more required elements are missing in HTML.");
         return;
     }
 
-    // Anonymous Toggle Logic
     anonymousToggle.addEventListener("change", function () {
         if (anonymousToggle.checked) {
             nameInput.value = "Anonymous";
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Star Rating Logic
     stars.forEach(star => {
         star.addEventListener("click", function () {
             const selectedRating = parseInt(star.getAttribute("data-value"));
@@ -42,26 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
-// Firebase Configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBZ-2hFq9hCkRGid0Hm-kYWfbVEMRoFnCg",
   authDomain: "entrep-web-28f06.firebaseapp.com",
   projectId: "entrep-web-28f06",
-  storageBucket: "entrep-web-28f06.appspot.com",  // Fixed the typo from "firebasestorage.app"
+  storageBucket: "entrep-web-28f06.appspot.com", 
   messagingSenderId: "475681344967",
   appId: "1:475681344967:web:24d9688bfbb54d2f775de2",
   measurementId: "G-4YCZE9ZBP3"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Function to submit a review
 document.getElementById("review-form").addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -74,7 +67,6 @@ document.getElementById("review-form").addEventListener("submit", async (e) => {
         return;
     }
 
-    // Store review in Firestore
     await addDoc(collection(db, "reviews"), {
         name,
         rating,
@@ -83,10 +75,9 @@ document.getElementById("review-form").addEventListener("submit", async (e) => {
     });
 
     alert("Review submitted successfully!");
-    loadReviews(); // Refresh reviews
+    loadReviews();
 });
 
-// Function to load reviews and update statistics
 async function loadReviews() {
     const querySnapshot = await getDocs(collection(db, "reviews"));
     const reviewList = document.getElementById("review-list");
@@ -116,7 +107,6 @@ async function loadReviews() {
     updateStats(totalReviews, totalStars, starCounts);
 }
 
-// Function to update statistics safely
 function updateStats(totalReviews, totalStars, starCounts) {
     const totalStarsEl = document.getElementById("total-stars");
     const avgRatingEl = document.getElementById("average-rating");
@@ -134,5 +124,4 @@ function updateStats(totalReviews, totalStars, starCounts) {
     }
 }
 
-// Load reviews when the page loads
 loadReviews();
