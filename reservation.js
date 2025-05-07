@@ -5,7 +5,7 @@ const receiptContainer = document.getElementById('receiptContainer');
 
 
 ticketsInput.addEventListener('input', () => {
-  const pricePerTicket = 29; 
+  const pricePerTicket = 25; 
   const tickets = parseInt(ticketsInput.value) || 1;
   priceField.value = '₱' + (pricePerTicket * tickets).toFixed(2);
 });
