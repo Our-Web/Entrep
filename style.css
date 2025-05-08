@@ -97,12 +97,12 @@ button:hover {
 
 .about-us h1, .about-us h2 {
     color: #43a047;
-    margin-bottom: 15px;  
+    margin-bottom: 30px;  
 }
 
 .about-us p {
-    margin-bottom: 20px; 
-    line-height: 1.6;   
+    margin-bottom: 30px; 
+    line-height: 2;   
 }
 
 .paco-gallery {
