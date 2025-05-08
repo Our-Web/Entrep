@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdessert Scoop</title>
+    <link rel="icon" href="Website Preview/Logo.png" type="image/jpeg"/>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Verdessert <span>Scoop</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h2>Leave a Review</h2>
+        <form id="review-form" action="https://formspree.io/f/mzzepqkq" method="POST">
+            <label for="name">Name (Optional)</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <div class="toggle-container">
+                <label>Anonymous</label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="anonymous-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+
+            <label for="rating">Rating</label>
+            <div class="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+            <input type="hidden" id="rating" name="rating">
+
+            <textarea id="review-message" name="message" placeholder="Write your review here..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+
+        <h2>Customer Reviews</h2>
+        <div id="review-list"></div>
+        <h2>Ratings</h2>
+       <h2>Review Statistics</h2>
+<p id="total-stars">Total Reviews: 0</p>
+<p id="average-rating">Average Rating: 0★</p>
+<p id="star-statistics">5★: 0 | 4★: 0 | 3★: 0 | 2★: 0 | 1★: 0</p>
+
+<div id="review-list"></div>
+</p>
+   </div>
+    
+    
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+<script type="module" src="review.js"></script>
+
+
+</body>
+
+</html>
